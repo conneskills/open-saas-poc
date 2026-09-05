@@ -17,3 +17,7 @@
 - **Decision:** no restore, schema mutation, or production connection is made against the visible inactive project without an explicit infrastructure decision.
 - **Reason:** reactivating or reusing an existing project can create cost, data-isolation, and ownership problems.
 
+## DEC-004 — Do not infer deployability from the template source
+
+- **Decision:** Vercel configuration will be chosen only after a successful Wasp compile/build and inspection of `.wasp/out`.
+- **Reason:** Open SaaS is a Wasp project whose generated client and server artefacts determine the actual deployment shape.
