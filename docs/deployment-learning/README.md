@@ -20,9 +20,9 @@ record, not a replacement for the application documentation.
 | Area | Status | Evidence / next action |
 | --- | --- | --- |
 | Git fork | Ready | `origin` is `conneskills/open-saas-poc`; `upstream` is `wasp-lang/open-saas` |
-| Wasp build | Pending | Run the pinned project tool from `template/app` |
+| Wasp build | Blocked | CLI reports `0.26.0`; compile needs package-network access and generated output is not yet available |
 | Vercel project | Pending | Create/link after confirming the correct deployment shape |
-| PostgreSQL | Blocked | The visible Supabase project is inactive; do not restore or mutate it implicitly |
+| PostgreSQL | Provisioned | Dedicated Supabase project `open-saas-poc-db` (`enssrainstoczzbpdtgt`) is active in `eu-central-1`; schema still pending |
 | Secrets | Pending | Add only after the target environments and feature scope are fixed |
 | Core smoke test | Pending | Register, sign in, load authenticated page, and verify persistence |
 | Production deploy | Pending | Do not call this complete until the smoke test and rollback path pass |
